@@ -1,0 +1,36 @@
+*{
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+}
+body
+{
+    background-color: #282A36;
+}
+.game-container
+{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container
+{
+    text-align: center;
+    width: 510px;
+    border-bottom: solid 1px #ffffff;
+}
+
+.tile-container
+{
+    width: 330px;
+    margin-bottom: 30px;
+}
+
+.key-container
+{
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
