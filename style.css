@@ -4,7 +4,7 @@
 }
 body
 {
-    background-color: #282A36;
+    background-color: #121213;
 }
 .game-container
 {
@@ -19,18 +19,58 @@ body
 {
     text-align: center;
     width: 510px;
+    height: 200px;
+    font-size: 10px;
     border-bottom: solid 1px #ffffff;
 }
 
 .tile-container
 {
-    width: 330px;
-    margin-bottom: 30px;
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile-container button
+{
+    width: 50px;
+    height: 40px;
+    border-radius: 1px;
+    border: none;
+    background-color: #3A3A3C;
+    color:#ffffff;
+    margin: 3px;
 }
 
 .key-container
 {
-    width: 510px;
+    width: 364px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.key-container button
+{
+    width: 30px;
+    height:40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #818384;
+    color:#ffffff;
+    margin: 3px;
+}
+.key-container button:nth-child(11)/*1st key of second row*/
+{
+    margin-left: 20px;
+}
+
+.key-container button:nth-child(20)/*Enter*/
+{
+    width: 50px;
+}
+.key-container button:nth-child(28) /*backspace*/
+{
+    width: 50px;
 }
