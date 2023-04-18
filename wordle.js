@@ -27,8 +27,11 @@ function gameStyle()
     backDiv.style.display = 'block'
     menuDiv.style.display = 'none'
     typeDiv.style.display = 'block'
-    const atmps = document.querySelector(".type-container button")
-    atmps.addEventListener('click', start)
+    const atmps = document.querySelector(".type-container .atmps button")
+    atmps.addEventListener('click', startAttempt)
+
+    const tim = document.querySelector(".type-container .tim button")
+    tim.addEventListener('click', startTimed)
 }
 
 function credit()
@@ -46,7 +49,30 @@ function back()
     backDiv.style.display = 'none'
 }
 
-function start()
+function startTimed()
+{
+    typeDiv.style.display = 'none'
+    menuDiv.style.display = 'none'
+    backDiv.style.display = 'none'
+
+    for(let i = 0; i < 30; i++)
+    {
+        const buttElement = document.createElement('button')
+        buttElement.addEventListener('click', onCLick)
+        tileDisplay.append(buttElement) 
+    }
+
+    keys.forEach(key => 
+        {
+            const buttElement = document.createElement('button')
+            buttElement.textContent = key
+            buttElement.setAttribute('id', key)
+            buttElement.addEventListener('click', onCLick)
+            keybord.append(buttElement)  
+        })  
+}
+
+function startAttempt()
 {
     typeDiv.style.display = 'none'
     menuDiv.style.display = 'none'
