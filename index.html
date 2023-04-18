@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <ul class="menu">
+           <li class="backButton"><button>Back</button></li>
+        <div class="start-container">
+            <li class="newGame"><button>New Game</button></li>
+            <li class="credits"><button>Credits</button></li>
+         </div>
+
+         <div class="credits-container">
+            <h1>I made this game</h1>
+         </div> 
+
+         <div class="type-container">
+            <li class="atmps"><button>Number of Attempts</button></li>
+            <li class="tim"><button>Timed</button></li>
+         </div>
+
+    </ul>
+
     <head>
         <meta charset="UTF-8">
-        <title>Multi-Wordle</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
-    <body>
 
+    <body>
         <div class="game-container">
             <div class="title-container">
-                <h1>Hi Jady :) <3</h1>
+                 <h1>Multiplayer Worlde</h1>
+                 <footer>To start a new game, refresh the page.</footer>
             </div>
             <div class="tile-container"></div>
             <div class="key-container"></div>
             <div class="message-container"></div>
+            <div class="instructions"></div>
         </div>
 
         <script src="wordle.js"></script>
